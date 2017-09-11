@@ -1,0 +1,31 @@
+package PageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+
+public class Login {
+	WebDriver Driver;
+	WebElement Login = Driver.findElement(By.xpath("//img[@src='/si_image/FirstLogin_img.png']"));
+	public Login(WebDriver Driver)
+	{
+		
+		System.out.println("Constructor Called");
+		this.Driver = Driver;
+		//PageFactory.initElements(Driver, this);
+	}
+
+	Login()
+	{
+		
+	}
+	
+	
+	public WebElement Log_In()
+	{
+		return Login;
+		
+	}
+
+}

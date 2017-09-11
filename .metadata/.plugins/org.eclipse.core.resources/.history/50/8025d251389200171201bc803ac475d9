@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<RollingFile name="ROLLING" fileName="C:/Users/arjun.rao/workspace/Log4j_Page_Object/logs/logs.log" filepattern = "C:/Users/arjun.rao/workspace/Log4j_Page_Object/logs/log-%d{dd MMM yyyy HH:mm:ss,SSS}.log">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+			<Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="0.001 MB"/>
+            </Policies>
+			<DefaultRolloverStrategy max="10"/>
+		</RollingFile>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="fatal">
+			<AppenderRef ref="ROLLING"/>
+		</Root>
+	</Loggers>
+</Configuration>

@@ -1,0 +1,15 @@
+package package2;
+
+import package1.Class1;
+
+public class Class6  extends Class1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Class6 C1 = new Class6();
+	     
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package New_Package;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class My_Class {
+
+	public static void main(String[] args) {
+        // declaration and instantiation of objects/variables
+    	WebDriver driver ;
+    	System.setProperty("webdriver.firefox.marionette","D:\\geckodriver.exe");
+    	driver = new FirefoxDriver();
+    	driver.get("http://vmisupqauprjfap/");
+    	System.out.println(driver.getTitle());
+    	driver.close();
+    }
+	
+}

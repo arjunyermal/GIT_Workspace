@@ -1,0 +1,59 @@
+package ReadExcelData;
+
+import java.io.FileInputStream;
+
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+
+import org.apache.poi.xssf.usermodel.XSSFRow;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import org.testng.annotations.Test;
+
+public class ReadExcelData {
+	
+	public static XSSFWorkbook wb;
+
+	public static XSSFSheet sheet;
+
+	public static XSSFRow row;
+	
+	public static XSSFCell cell;
+
+	public static FileInputStream fis;
+	
+	@Test
+	void ReadExcelData_M() throws IOException
+	{
+		
+		getCelldata(2,2);
+
+	}
+	
+	public static String getCelldata( int rownum,int col) throws IOException
+
+	{
+
+	fis =new FileInputStream("C:\\Users\\arjun.rao\\workspace\\Excel_Utility\\Excel_Utility.xlsx");
+
+	wb=new XSSFWorkbook(fis);
+
+	sheet=wb.getSheetAt(0);
+
+	row=sheet.getRow(1);
+	
+	int lastrow = sheet.getPhysicalNumberOfRows();
+	System.out.println("lastrow = " + lastrow);
+
+	cell=row.getCell(1);
+
+	return cell.getStringCellValue();
+
+	}
+}
+
+

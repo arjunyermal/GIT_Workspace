@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="7" total="20" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="185" started-at="2017-09-01T12:15:03Z" finished-at="2017-09-01T12:15:04Z">
+    <groups>
+      <group name="someFeature">
+        <method signature="UnitLevelTesting.unitTest3()[pri:0, instance:testng.UnitLevelTesting@490d6c15]" name="unitTest3" class="testng.UnitLevelTesting"/>
+        <method signature="FunctionalTesting.scenario2()[pri:0, instance:testng.FunctionalTesting@1ff8b8f]" name="scenario2" class="testng.FunctionalTesting"/>
+        <method signature="UITesting.ui1()[pri:0, instance:testng.UITesting@50cbc42f]" name="ui1" class="testng.UITesting"/>
+        <method signature="FunctionalTesting.scenario2()[pri:0, instance:testng.FunctionalTesting@483bf400]" name="scenario2" class="testng.FunctionalTesting"/>
+        <method signature="UITesting.ui1()[pri:0, instance:testng.UITesting@64c64813]" name="ui1" class="testng.UITesting"/>
+        <method signature="UnitLevelTesting.unitTest3()[pri:0, instance:testng.UnitLevelTesting@3ecf72fd]" name="unitTest3" class="testng.UnitLevelTesting"/>
+      </group> <!-- someFeature -->
+    </groups>
+    <test name="UnitTesting" duration-ms="18" started-at="2017-09-01T12:15:03Z" finished-at="2017-09-01T12:15:03Z">
+      <class name="testng.UnitLevelTesting">
+        <test-method status="PASS" signature="unitTest2()[pri:0, instance:testng.UnitLevelTesting@490d6c15]" name="unitTest2" duration-ms="1" started-at="2017-09-01T17:45:03Z" finished-at="2017-09-01T17:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unitTest2 -->
+        <test-method status="PASS" signature="unitTest1()[pri:0, instance:testng.UnitLevelTesting@490d6c15]" name="unitTest1" duration-ms="0" started-at="2017-09-01T17:45:03Z" finished-at="2017-09-01T17:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unitTest1 -->
+        <test-method status="PASS" signature="unitTest3()[pri:0, instance:testng.UnitLevelTesting@490d6c15]" name="unitTest3" duration-ms="0" started-at="2017-09-01T17:45:03Z" finished-at="2017-09-01T17:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unitTest3 -->
+      </class> <!-- testng.UnitLevelTesting -->
+    </test> <!-- UnitTesting -->
+    <test name="FunctionalTesting" duration-ms="12" started-at="2017-09-01T12:15:04Z" finished-at="2017-09-01T12:15:04Z">
+      <class name="testng.FunctionalTesting">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testng.FunctionalTesting@1ff8b8f]" name="beforeTest" is-config="true" duration-ms="1" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.FunctionalTesting@1ff8b8f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="scenario1()[pri:0, instance:testng.FunctionalTesting@1ff8b8f]" name="scenario1" duration-ms="1" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testng.FunctionalTesting@1ff8b8f]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.FunctionalTesting@1ff8b8f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="scenario2()[pri:0, instance:testng.FunctionalTesting@1ff8b8f]" name="scenario2" duration-ms="0" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testng.FunctionalTesting@1ff8b8f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="scenario3()[pri:0, instance:testng.FunctionalTesting@1ff8b8f]" name="scenario3" duration-ms="0" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario3 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testng.FunctionalTesting@1ff8b8f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testng.FunctionalTesting@1ff8b8f]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testng.FunctionalTesting@1ff8b8f]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testng.FunctionalTesting -->
+    </test> <!-- FunctionalTesting -->
+    <test name="UITesting" duration-ms="2" started-at="2017-09-01T12:15:04Z" finished-at="2017-09-01T12:15:04Z">
+      <class name="testng.UITesting">
+        <test-method status="PASS" signature="ui2()[pri:0, instance:testng.UITesting@50cbc42f]" name="ui2" duration-ms="0" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ui2 -->
+        <test-method status="PASS" signature="ui1()[pri:0, instance:testng.UITesting@50cbc42f]" name="ui1" duration-ms="0" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ui1 -->
+        <test-method status="PASS" signature="ui3()[pri:0, instance:testng.UITesting@50cbc42f]" name="ui3" duration-ms="0" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ui3 -->
+        <test-method status="PASS" signature="ui4()[pri:0, instance:testng.UITesting@50cbc42f]" name="ui4" duration-ms="0" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ui4 -->
+      </class> <!-- testng.UITesting -->
+    </test> <!-- UITesting -->
+    <test name="SomeFeature" duration-ms="3" started-at="2017-09-01T12:15:04Z" finished-at="2017-09-01T12:15:04Z">
+      <class name="testng.UnitLevelTesting">
+        <test-method status="PASS" signature="unitTest3()[pri:0, instance:testng.UnitLevelTesting@3ecf72fd]" name="unitTest3" duration-ms="0" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unitTest3 -->
+      </class> <!-- testng.UnitLevelTesting -->
+      <class name="testng.UITesting">
+        <test-method status="PASS" signature="ui1()[pri:0, instance:testng.UITesting@64c64813]" name="ui1" duration-ms="0" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ui1 -->
+      </class> <!-- testng.UITesting -->
+      <class name="testng.FunctionalTesting">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testng.FunctionalTesting@1ff8b8f]" name="beforeSuite" is-config="true" duration-ms="28" started-at="2017-09-01T17:45:03Z" finished-at="2017-09-01T17:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="scenario2()[pri:0, instance:testng.FunctionalTesting@483bf400]" name="scenario2" duration-ms="0" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testng.FunctionalTesting@1ff8b8f]" name="afterSuite" is-config="true" duration-ms="0" started-at="2017-09-01T17:45:04Z" finished-at="2017-09-01T17:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testng.FunctionalTesting -->
+    </test> <!-- SomeFeature -->
+  </suite> <!-- Suite -->
+</testng-results>

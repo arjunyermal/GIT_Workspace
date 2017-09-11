@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ParameterSuite]">
+  <parameter name="suiteParam" value="suiteScoped"/>
+  <parameter name="testParam" value="testScoped"/>
+  <parameter name="commonParam" value="suiteValue"/>
+  <parameter name="classesParam" value="classesScoped"/>
+  <test name="MethodParamScopedTest(failed)">
+    <parameter name="testParam" value="testScoped"/>
+    <parameter name="classesParam" value="classesScoped"/>
+    <classes>
+      <class name="com.javarticles.testng.TestClass1">
+        <parameter name="commonParam" value="overridenClassValue"/>
+        <parameter name="classParam" value="classScoped"/>
+        <methods>
+          <include name="paramScopeExample"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.javarticles.testng.TestClass1 -->
+    </classes>
+  </test> <!-- MethodParamScopedTest(failed) -->
+</suite> <!-- Failed suite [ParameterSuite] -->

@@ -1,0 +1,12 @@
+18:22:21.669 [main] TRACE Log4J__Package.Log4j_Test_Class2 - Trace
+18:22:21.675 [main] DEBUG Log4J__Package.Log4j_Test_Class2 - Debug
+18:22:21.675 [main] ERROR Log4J__Package.Log4j_Test_Class2 - Error
+18:22:21.675 [main] FATAL Log4J__Package.Log4j_Test_Class2 - Fatal
+18:22:21.675 [main] INFO  Log4J__Package.Log4j_Test_Class2 - Info
+18:22:21.675 [main] WARN  Log4J__Package.Log4j_Test_Class2 - Warn
+18:22:21.681 [main] TRACE Log4J__Package.Log4j_Test_Class - Trace
+18:22:21.682 [main] DEBUG Log4J__Package.Log4j_Test_Class - Debug
+18:22:21.682 [main] ERROR Log4J__Package.Log4j_Test_Class - Error
+18:22:21.682 [main] FATAL Log4J__Package.Log4j_Test_Class - Fatal
+18:22:21.682 [main] INFO  Log4J__Package.Log4j_Test_Class - Info
+18:22:21.682 [main] WARN  Log4J__Package.Log4j_Test_Class - Warn

@@ -1,0 +1,22 @@
+package TestCase;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import PageObjects.Login;
+
+public class TestCase1 {
+	
+	@Test
+	TestCase1()
+	{
+		Login A = new Login();
+		System.setProperty("webdriver.chrome.driver", "E:\\Selenium jars\\chromedriver_win32\\chromedriver.exe");
+		WebDriver Driver = new ChromeDriver();
+		Driver.get("http://vmisupqauprjfap/");
+		A.Log_In().click();;
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package Framework2;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import Framework1.Common_Utils1;
+
+public class Test1 extends Common_Utils1
+{
+	@Test
+	public void Test_1() throws IOException
+	{
+		login();
+		System.out.println(Driver.getTitle());
+		Thread.sleep(io_file.getProperty("wait_5s"));
+    }
+}

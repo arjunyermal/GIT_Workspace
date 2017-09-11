@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;FrameWork_Setup/Params.Properties&apos; to &apos;Common_Params.Properties&apos;" description="Rename resource &apos;Params.Properties&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Params.Properties" name="Common_Params.Properties" stamp="1503470919272" updateReferences="true"/>
+</session>

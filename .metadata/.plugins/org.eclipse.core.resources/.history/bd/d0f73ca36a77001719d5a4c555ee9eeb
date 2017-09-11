@@ -1,0 +1,47 @@
+package Test_pkg;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Window;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class BasicClass {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		//System.setProperty("webdriver.chrome.driver", "E:\\Selenium jars\\chromedriver_win32\\chromedriver.exe");
+		//WebDriver Driver = new ChromeDriver();
+		
+		System.setProperty("webdriver.gecko.driver","E:\\Selenium jars\\Geckodriver\\geckodriver.exe");
+		WebDriver Driver = new FirefoxDriver();
+    	
+		//String url  = "www.google.com";
+		
+		//Driver.get("http://vmisupqauprjfap.metricstream.com");
+		//Driver.findElement(By.xpath("//*[@id='loginHref']/img")).click();
+		//Driver.findElement(By.cssSelector("#login")).sendKeys("bsilva");
+		//Driver.findElement(By.xpath("//*[@id='password']")).sendKeys("welcome*123");
+		//Driver.findElement(By.xpath("//div[@id='middle']/div[2]/div/form/input[3]")).click();
+		//Thread.sleep(5000);
+		//Driver.findElement(By.linkText("Metrics Mgmt")).click();
+		//Thread.sleep(5000);
+		//Driver.switchTo().frame("MultiWindowIframe1");
+		
+		
+		//Driver.findElement(By.xpath("//div[@id='102980']/div[2]//div[1]/div/div/div/div/div/div/div/div[1]/div[2]/div[1]/div[1]/table/tbody/tr/td[2]/div")).click();
+		//Driver.findElement(By.cssSelector("#ext-gen175 > div.x-grid3-row.grid-evenrow.x-grid3-row-first > table > tbody > tr > td.x-grid3-col.x-grid3-cell.x-grid3-td-1.hand-cursor > div")).click();
+		//Driver.findElement(By.xpath("//*[@id='ext-gen128']")).click();
+		//Driver.findElement(By.xpath("//*[@id='0_Metric_Definition_Name']")).sendKeys("%Test%");
+		//Driver.findElement(By.xpath("//*[@id='0_Metric_Definition_Name']")).click();
+		//Driver.close();
+		///div[@id='middle']/div[2]/div/form/input[3]
+		
+		Driver.get("https://book2.spicejet.com/");
+		Driver.findElement(By.xpath("//input[@id='ControlGroupSearchView_AvailabilitySearchInputSearchVieworiginStation1_CTXT']")).click();
+		Driver.findElement(By.linkText(" Goa (GOI)")).click();
+		
+		
+	}
+
+}

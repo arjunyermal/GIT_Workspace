@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ChildSuite]">
+  <parameter name="param1" value="One"/>
+  <parameter name="param2" value="1"/>
+  <test name="InheritedParamTest(failed)">
+    <classes>
+      <class name="com.javarticles.testng.InheritedParamExample">
+        <methods>
+          <include name="inheritedParams"/>
+        </methods>
+      </class> <!-- com.javarticles.testng.InheritedParamExample -->
+    </classes>
+  </test> <!-- InheritedParamTest(failed) -->
+</suite> <!-- Failed suite [ChildSuite] -->

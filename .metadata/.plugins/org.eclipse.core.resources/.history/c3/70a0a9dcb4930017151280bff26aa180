@@ -1,0 +1,79 @@
+package ReadExcelData;
+
+import java.io.FileInputStream;
+
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+
+import org.apache.poi.xssf.usermodel.XSSFRow;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import org.testng.annotations.Test;
+
+import org.apache.poi.ss.formula.functions.Vlookup;
+
+public class ReadExcelData {
+	
+	public static XSSFWorkbook wb;
+
+	public static XSSFSheet sheet;
+
+	public static XSSFRow row;
+	
+	public static XSSFCell cell;
+
+	public static FileInputStream fis;
+	
+	
+	@Test
+	void ReadExcelData_M() throws IOException
+	{
+		
+		getCelldata("Label 8");
+
+	}
+	
+	public static String getCelldata( String text) throws IOException
+
+	{
+
+	fis =new FileInputStream("C:\\Users\\arjun.rao\\workspace\\Excel_Utility\\Excel_Utility.xlsx");
+
+	wb=new XSSFWorkbook(fis);
+
+	sheet=wb.getSheetAt(0);
+
+	
+	
+	int lastrow = sheet.getLastRowNum();
+	System.out.println("lastrow = " + lastrow);
+	
+	for(int i = 0;i<lastrow+1;i++)
+	{
+		row=sheet.getRow(i);
+		cell=row.getCell(0);
+		System.out.println(i);
+		if(cell!=null)
+		{
+			if (cell.getStringCellValue().equals(text))
+			{
+				cell=row.getCell(1);
+				System.out.println(text + " = " + cell.getStringCellValue());
+				break;
+			}	
+		}
+	}
+
+	
+
+	return cell.getStringCellValue();
+
+	}
+}
+
+
